@@ -1,0 +1,11 @@
+{
+  "name": "login flow",
+  "runner": "playwright",
+  "baseUrl": "https://example.com/login",
+  "steps": [
+    { "action": "fill", "target": "#email", "value": "user@example.com" },
+    { "action": "fill", "target": "#password", "value": "secret" },
+    { "action": "click", "target": "button[type=submit]" },
+    { "action": "assertVisible", "target": ".dashboard" }
+  ]
+}

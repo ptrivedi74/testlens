@@ -1,0 +1,26 @@
+{
+  "name": "testlens",
+  "version": "0.1.0",
+  "description": "AI-callable test automation exposed as an MCP server",
+  "type": "module",
+  "bin": { "testlens": "dist/index.js" },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "test": "npm run build && node --test dist/tests/smoke.test.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "pixelmatch": "^5.3.0",
+    "pngjs": "^7.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.0.0",
+    "@types/pixelmatch": "^5.2.6",
+    "@types/pngjs": "^6.0.5",
+    "typescript": "^5.6.0"
+  }
+}
