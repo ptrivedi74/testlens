@@ -47,5 +47,7 @@ Then ask the agent: *"Use testlens to generate a Playwright test from examples/s
 
 v0.1 is an MVP scaffold. Known limits: `execute_tests` parses console output (switch to JSON reporters for exact results); `heal_locator` and `analyze_failure` are heuristic baselines; `visual_diff` needs same-size PNGs. Next: LLM-backed healing/classification, JSON reporters, REST/CLI wrapper, more runners.
 
+[![M8ven Score](https://m8ven.ai/badge/mcp/ptrivedi74-testlens-12svad?v=dfc8c4cdf2b94e1d7e5873081d18bede)](https://m8ven.ai/mcp/ptrivedi74-testlens-12svad?s=readme)
+
 ## License
 MIT
